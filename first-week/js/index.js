@@ -211,38 +211,3 @@ for(let contador = 0; contador < outraLista.length; contador++)
     console.log(`O elemento da
 
     vez é ${outraLista[contador]}.`) //template literais, ou template strings
-
-    /* 
-const testeLiteral = (`\``==="`")
-console.log(`\\`)
-const a=3, b=5
-console.log('Oito é '+(a+b)+' \ne não '+(2*a+b))
-console.log(`Oito é ${(a+b)} 
-e não ${(2*a+b)}`)
-//métodos de listas-arrays-vetores
-const nomes = ['Abimael','Cleyciane','Paulo','Victor']
-nomes.forEach(function(nome){
-    console.log(nome)
-})
-const nomesModificados = nomes.map(function(nome){
-    if(nome === 'Paulo'){
-        nome = 'O Grande'
-        return nome
-    }else
-        return nome
-})
-nomesModificados.forEach(function(nome){
-    console.log(nome)
-})
-const numerosGrandes = ['60','1','9','17','99','94'].filter(function(numero){
-    return (numero>10)
-})
-numerosGrandes.forEach(function(numero){
-    console.log(numero)
-})
-console.log(numerosGrandes.reduce(function(total,numero){
-    return parseInt(total)+parseInt(numero)
-}))
-
-
- */
