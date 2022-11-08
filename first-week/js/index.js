@@ -88,7 +88,7 @@ const chars = ['A', 'B', 'C', 'D', 88]
 console.log(chars.length)
 // para chegar na última posição, tamanho-1 como índice
 console.log(chars[chars.length-1])
-// mesmo que seja declarado como const, dá pra manipular um array
+// mesmo que seja declarado como const, dá pra manipular os conteúdos de um array, inserindo e excluindo dados
 chars[5] = 'F'
 console.log(chars)
 // pop para excluir do fim do array; shift para excluir do início do array
@@ -98,8 +98,6 @@ chars.pop()
 // push para inserir no fim do array; unshift para inserir no início do array 
 chars.push('B')
 console.log(chars)
-
-
 
 // Desafio: desenvolva uma calculadora para as 4 operações básicas usando const com os dados vindo de um formulário.
 
@@ -111,6 +109,7 @@ function sum(){
 }
 
 // object literal
+// objetos literais são utilizados para representar endidades como pessoas, produtos, usuários...
 
 const product = {
     productName: 'Camisa',
@@ -122,22 +121,29 @@ const product = {
 
 console.log(product.size[product.size.length-1])
 console.log(product.price)
+// a propriedade 'main color' não pode ser chamada via sintaxe de orientação a objetos; precisa ser utilizada a sintaxe de vetor em virtude do nome composto como propriedade do objeto product
 console.log(product['main color'])
 
 // destructuring - desestruturação
+// é uma técnica muito utilizada para armazenar dados de estruturas em variáveis
 
+// desestruturando o objeto product para duas variáveis
+// os nomes precisam ser idênticos aos das propriedades do objeto
 let { productName, price } = product
 console.log(price)
 price = 30.49
 console.log(price)
 console.log(product.price)
 
+
 const vector = [3,7,2,45,99]
+// desestruturando um vetor
 let [ v1, v2, ...otherVector] = vector
 console.log(otherVector)
 
 // JSON - JavaScript Object Notation
-// XML é concorrente do JSON
+// é uma notação, ou seja, uma forma de escrever com regras específicas, como o XML, por exemplo
+// todo JSON é composto por texto, ou seja, interpretado como string, mas possuindo regras de sintaxe específicas
 
 // criando o objeto cachorro
 const dog = {
@@ -145,11 +151,14 @@ const dog = {
     age: 10
 }
 console.log(dog)
+// transformando o objeto em JSON
 const dogJson = JSON.stringify(dog)
 console.log(dogJson)
+// transoformando o JSON em objeto literal
 const dogObject = JSON.parse(dogJson)
 console.log(dogObject)
 
+// caso haja algum erro na sintaxe, não pode ser considerado um JSON válido
 //const jsonErrado = '{"primeiro":"dado1""segundo":222,"terceiro":"dado3}'
 //const jsonErradoObject = JSON.parse(jsonErrado)
 
@@ -181,36 +190,39 @@ const calc = {
 }
 console.log(JSON.stringify(calc))
 
-
-
 // estruturas
+
+// seleção
 const num = 100
-if(n > 10){ // > < >= <= == !=
+if(n > 10){ // operadores relacionais: > < >= <= == !=
     console.log('Teste de entrada no if.')
 }
 const texto = '0'
-if(texto === 0)
+if(texto === 0) // o operador de tríplice igualdade compara o valor e o tipo dos conteúdos
     console.log("Os dados são iguais.")
 else if(true) 
     console.log('Segundo if - if aninhado.')
 else
     console.log('Saída...') // erro na hora de pensar o código...
 
-    // operador ternário
+// operador ternário
 const resultado =  n > 20 ? true : false
 console.log(resultado)
 console.log(typeof resultado)
+
 // repetição: precisa de 3 partes - variável de controle e a inicialização dela; condição/critério de parada; alteração do valor da variável de controle
+
 let contador = 0
 const lista = [1, 7, 3, 64, 2, 0]
 while(contador < lista.length){
     console.log('O \'elemento\' da\n\n vez é ' + lista[contador] + '.')
     contador++ // contador = contador + 1
 }
+
 const outraLista = ['a', 'b', 'd', 'e', 'c']
 for(let contador = 0; contador < outraLista.length; contador++)
     console.log(`O elemento da
-vez é ${outraLista[contador]}.`) //template literais, ou template strings; a quebra de linha no editor de cógidos gera quebra de linha no navegador.
+vez é ${outraLista[contador]}.`) //template literais, ou template strings: conteúdo entre crases; a quebra de linha no editor de cógidos gera quebra de linha no navegador.
 
 const var1 = 5
 const var2 = 10
@@ -223,22 +235,24 @@ console.log(out)
 
 const names = ['Victor','Paulo','Elias','Fabiana']
 
-// forEach percorre um vetor
+// forEach percorre um vetor]
+// os métodos para vetores precisam de funções anônimas para auxiliarem na resolução das suas funcionalidades
 names.forEach(function(name){
     console.log(name)
 })
 
+// map percorre o vetor e permite fazer alterações nos conteúdos mapeados, retornando a alteração como resultado
 const modifiedNames = names.map(function(name){
     if(name == 'Paulo')
         return ('Paulo Sampaio')
     else    
         return name
 })
-
 modifiedNames.forEach(function(name){
     console.log(name)
 })
 
+// filter permite realizar uma filtragem em um vetor, retornando o resultado
 const numArray = [90,-4,6,22,0,36,1,4].filter(function(num){
     return num < 10
 })
@@ -247,6 +261,7 @@ numArray.forEach(function(num){
 })
 console.log(numArray)
 
+// reduce permite aplicar operações matemáticas para reduzir o vetor a um resultado
 const sumArray = numArray.reduce(function(num1, num2){
     return num1+num2
 })
@@ -261,10 +276,10 @@ function myFunction(name, surname){
 console.log(myFunction('Paulo', 'Sampaio'))
 
 // arrow function === função anônima
-// function(data){ return 0; } 
+// function(data){ return 0; } é uma função anônima, ou seja, uma função que não possui nome na sua assinatura
 
+// arrow functions geralmente são atribuídas a variáveis que passam a ser funções ou são parte dos parâmetros ou argumentos de uma chamada de função.
 const myArrowFunction = (a,b) => a+b
-
 console.log(myArrowFunction(5,2))
 
 //Desafio: Transforme a função a seguir em uma arrow function.
@@ -282,3 +297,49 @@ function fora(){
 const fora = () => ((x=7), ()=>x+5)  ()
 console.log(fora())
 
+// closures
+
+let varX = 50
+function out(){
+   function sumXand5(){
+      return varX+5
+   }
+   return sumXand5
+}
+console.log(fora())
+
+// orientação a objetos
+
+class Product {
+    constructor(name, price) {
+        this.name = name
+        this.price = price
+    }
+    productDetails() {
+        return `O preço do produto ${this.nome} é R$ ${this.preco}.`
+    }
+}
+const oculos = new Produto('óculos', 19.90)
+//herança
+class ProdutoComTamanho extends Produto {
+    constructor(nome, preco, tamanho) {
+        super(nome, preco)
+        this.tamanho = tamanho
+    }
+    outraMensagem(adjetivo) {
+        return `O produto ${this.nome} é ${adjetivo} demais.`
+    }
+}
+const camisa = new ProdutoComTamanho('camisa', 26.99, 'M')
+console.log(camisa.detalhesDoProduto())
+console.log(camisa.outraMensagem('bom'))
+//console.log(oculos.outraMensagem())
+
+
+// callbacks
+
+// DOM - Document Object Model
+
+// promises
+
+// programação assíncrona
