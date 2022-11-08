@@ -226,9 +226,9 @@ vez é ${outraLista[contador]}.`) //template literais, ou template strings: cont
 
 const var1 = 5
 const var2 = 10
-const out = `Quinze é ${(var1+var2)}
+const outLiteral = `Quinze é ${(var1+var2)}
 e não ${(2*var1+var2)}.`
-console.log(out)
+console.log(outLiteral)
 
 // métodos de arrays
 // os métodos de arrays esperam funções anônimas como argumentos para responder aos parâmetros
@@ -285,17 +285,17 @@ console.log(myArrowFunction(5,2))
 //Desafio: Transforme a função a seguir em uma arrow function.
 
 /*
-function fora(){
+function out(){
     let x = 7
-    function somarXMais5(){
+    function sumXand5(){
         return x+5
     }
-    return somarXMais5()
+    return sumXand5()
 }
 */
 
-const fora = () => ((x=7), ()=>x+5)  ()
-console.log(fora())
+const testArrow = () => ((x=7), ()=>(x+5))  ()
+console.log(testArrow())
 
 // closures
 
@@ -306,7 +306,10 @@ function out(){
    }
    return sumXand5
 }
-console.log(fora())
+console.log(out())
+
+// Desafio A+: Fazer esquema em que um código declara uma variável (let) e uma função faz a soma do valor da variável com um valor estático (5, por exemplo) como retorno. Outro código importa o primeiro e declara uma variável com o mesmo nome e outro valor. Em seguida, chama a função do primeiro código. Qual valor será exibido?
+// Utilizar o artigo disponível no endereço https://www.horadecodar.com.br/2020/08/13/como-incluir-um-arquivo-de-javascript-em-outro/
 
 // orientação a objetos
 
