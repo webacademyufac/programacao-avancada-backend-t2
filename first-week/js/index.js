@@ -310,35 +310,9 @@ console.log(fora())
 
 // orientação a objetos
 
-class Product {
-    constructor(name, price) {
-        this.name = name
-        this.price = price
-    }
-    productDetails() {
-        return `O preço do produto ${this.nome} é R$ ${this.preco}.`
-    }
-}
-const oculos = new Produto('óculos', 19.90)
-//herança
-class ProdutoComTamanho extends Produto {
-    constructor(nome, preco, tamanho) {
-        super(nome, preco)
-        this.tamanho = tamanho
-    }
-    outraMensagem(adjetivo) {
-        return `O produto ${this.nome} é ${adjetivo} demais.`
-    }
-}
-const camisa = new ProdutoComTamanho('camisa', 26.99, 'M')
-console.log(camisa.detalhesDoProduto())
-console.log(camisa.outraMensagem('bom'))
-//console.log(oculos.outraMensagem())
-
+// DOM - Document Object Model
 
 // callbacks
-
-// DOM - Document Object Model
 
 // promises
 
