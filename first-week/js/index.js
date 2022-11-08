@@ -102,7 +102,7 @@ console.log(chars)
 
 
 // Desafio: desenvolva uma calculadora para as 4 operações básicas usando const com os dados vindo de um formulário.
-
+/* 
 function sum(){
     const formData = new FormData(document.querySelector('form'))
     const n1 = formData.get('n1')
@@ -183,7 +183,7 @@ console.log(JSON.stringify(calc))
 
 
 
-// estruturas, métodos de listas, funções
+// estruturas
 const n = 100
 if(n > 10){ // > < >= <= == !=
     console.log('Teste de entrada no if.')
@@ -195,7 +195,8 @@ else if(true)
     console.log('Segundo if - if aninhado.')
 else
     console.log('Saída...') // erro na hora de pensar o código...
-// operador ternário
+
+    // operador ternário
 const resultado =  n > 20 ? true : false
 console.log(resultado)
 console.log(typeof resultado)
@@ -211,3 +212,75 @@ for(let contador = 0; contador < outraLista.length; contador++)
     console.log(`O elemento da
 
     vez é ${outraLista[contador]}.`) //template literais, ou template strings
+
+const a = 5
+const b = 10
+const out = `Quinze é ${(a+b)}
+e não ${(2*a+b)}.`
+console.log(out)
+
+// métodos de arrays
+
+const names = ['Victor','Paulo','Elias','Fabiana']
+
+names.forEach(function(name){
+    console.log(name)
+})
+
+const modifiedNames = names.map(function(name){
+    if(name == 'Paulo')
+        return ('Paulo Sampaio')
+    else    
+        return name
+})
+
+modifiedNames.forEach(function(name){
+    console.log(name)
+})
+
+const numArray = [90,-4,6,22,0,36,1,4].filter(function(num){
+    return num < 10
+})
+numArray.forEach(function(num){
+    console.log(num)
+})
+console.log(numArray)
+
+const sumArray = numArray.reduce(function(num1, num2){
+    return num1+num2
+})
+console.log(sumArray)
+
+ */
+
+// funções
+
+function myFunction(name, surname){
+    return `O nome completo é ${name} ${surname}.`
+}
+
+console.log(myFunction('Paulo', 'Sampaio'))
+
+// arrow function === função anônima
+// function(data){ return 0; } 
+
+const myArrowFunction = (a,b) => a+b
+
+
+console.log(myArrowFunction(5,2))
+
+//Transforme a função a seguir em uma arrow function.
+
+/*
+function fora(){
+    let x = 7
+    function somarXMais5(){
+        return x+5
+    }
+    return somarXMais5()
+}
+*/
+
+const fora = () => ((x=7), ()=>x+5)  ()
+console.log(fora())
+
