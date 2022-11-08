@@ -1,4 +1,4 @@
-/* // Overview de JavaScript
+// Overview de JavaScript
 
 // console
 console.log('Texto dentro de um log.')
@@ -98,11 +98,11 @@ chars.pop()
 // push para inserir no fim do array; unshift para inserir no início do array 
 chars.push('B')
 console.log(chars)
- */
+
 
 
 // Desafio: desenvolva uma calculadora para as 4 operações básicas usando const com os dados vindo de um formulário.
-/* 
+
 function sum(){
     const formData = new FormData(document.querySelector('form'))
     const n1 = formData.get('n1')
@@ -184,7 +184,7 @@ console.log(JSON.stringify(calc))
 
 
 // estruturas
-const n = 100
+const num = 100
 if(n > 10){ // > < >= <= == !=
     console.log('Teste de entrada no if.')
 }
@@ -210,19 +210,20 @@ while(contador < lista.length){
 const outraLista = ['a', 'b', 'd', 'e', 'c']
 for(let contador = 0; contador < outraLista.length; contador++)
     console.log(`O elemento da
+vez é ${outraLista[contador]}.`) //template literais, ou template strings; a quebra de linha no editor de cógidos gera quebra de linha no navegador.
 
-    vez é ${outraLista[contador]}.`) //template literais, ou template strings
-
-const a = 5
-const b = 10
-const out = `Quinze é ${(a+b)}
-e não ${(2*a+b)}.`
+const var1 = 5
+const var2 = 10
+const out = `Quinze é ${(var1+var2)}
+e não ${(2*var1+var2)}.`
 console.log(out)
 
 // métodos de arrays
+// os métodos de arrays esperam funções anônimas como argumentos para responder aos parâmetros
 
 const names = ['Victor','Paulo','Elias','Fabiana']
 
+// forEach percorre um vetor
 names.forEach(function(name){
     console.log(name)
 })
@@ -251,8 +252,6 @@ const sumArray = numArray.reduce(function(num1, num2){
 })
 console.log(sumArray)
 
- */
-
 // funções
 
 function myFunction(name, surname){
@@ -266,10 +265,9 @@ console.log(myFunction('Paulo', 'Sampaio'))
 
 const myArrowFunction = (a,b) => a+b
 
-
 console.log(myArrowFunction(5,2))
 
-//Transforme a função a seguir em uma arrow function.
+//Desafio: Transforme a função a seguir em uma arrow function.
 
 /*
 function fora(){
