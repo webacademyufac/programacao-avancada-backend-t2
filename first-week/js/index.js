@@ -308,30 +308,35 @@ console.log(arrayfunc())
 const namesLength = names.map( ({length}) => length )
 console.log(namesLength)
 
-// sequência de exemplos para entender o que occore com o map acima
+// sequência de exemplos para entender o que ocorre com o map acima
 
-// instrução 1 com arrow function normal e variável de nome value
+// instrução 1 com arrow function normal e variável de nome value,
+// com leitura da propriedade length dentro da arrow no return implícito
 console.log( names.map( value => value.length ) )
 
-// instrução 2 com atribuição de variavel de nome v
+// instrução 2 com atribuição de variavel de nome v e leitura da propriedade 
+// dentro da arrow
 console.log( names.map( (v = value) => v.length ) )
 
-// instrução 3 com desestruturação de propriedade com notação de ponto
+// instrução 3 com desestruturação de propriedade com notação de ponto passando 
+// somente o valor (não mais o objeto para leitura da propriedade dentro da arrow)
 console.log( names.map( ({length} = value.length) => length  ) )
 
-// instrução 4 com desestruturação de propriedade com notação de array
+// instrução 4 com desestruturação de propriedade com notação de array passando 
+// somente o valor
 console.log( names.map( ({length} = value['length']) => length ) )
 
 // instrução 5 com desestruturação de propriedade com notação de array e sem nome
+// na direita da atribuição
 console.log( names.map( ({length} = ['length']) => length ) )
 
-// instrução 6 com desestruturação de propriedade sem a igualdade
-// aqui a propriedade é desestruturada em uma variável de mesmo nome
-// que é passada como parâmetro e simplesmente retornada
+// instrução 6 com desestruturação de propriedade sem a atribuição (que já acontece 
+// na passagem do parâmetro map), aqui a propriedade é desestruturada em uma variável 
+// de mesmo nome  que é passada como parâmetro e simplesmente retornada
 console.log( names.map( ({length}) => length ) )
 
-// exemplo com outros objetos na mesma situação de compartilhar uma propriedade e estarem
-// dentro de um array
+// exemplo com outros objetos na mesma situação de compartilhar uma propriedade de 
+// mesmo nome e estarem dentro de um array
 teste1 = {
    valor: 10
 } 
