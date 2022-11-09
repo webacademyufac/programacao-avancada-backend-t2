@@ -300,7 +300,45 @@ console.log(testArrow())
 const namesLength = names.map( ({length}) => length )
 console.log(namesLength)
 
+// sequência de exemplos para entender o que occore com o map acima
 
+// instrução 1 com arrow function normal e variável de nome value
+console.log( names.map( value => value.length ) )
+
+// instrução 2 com atribuição de variavel de nome v
+console.log( names.map( (v = value) => v.length ) )
+
+// instrução 3 com desestruturação de propriedade com notação de ponto
+console.log( names.map( ({length} = value.length) => length  ) )
+
+// instrução 4 com desestruturação de propriedade com notação de array
+console.log( names.map( ({length} = value['length']) => length ) )
+
+// instrução 5 com desestruturação de propriedade com notação de array e sem nome
+console.log( names.map( ({length} = ['length']) => length ) )
+
+// instrução 6 com desestruturação de propriedade sem a igualdade
+// aqui a propriedade é desestruturada em uma variável de mesmo nome
+// que é passada como parâmetro e simplesmente retornada
+console.log( names.map( ({length}) => length ) )
+
+// exemplo com outros objetos na mesma situação de compartilhar uma propriedade e estarem
+// dentro de um array
+teste1 = {
+   valor: 10
+} 
+
+teste2 = {
+   valor: 100
+} 
+
+teste3 = {
+   valor: 1000
+} 
+
+testes = [ teste1, teste2, teste3 ]
+
+console.log( testes.map( ({valor}) => valor) )
 
 // closures
 
