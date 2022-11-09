@@ -1,10 +1,14 @@
 // Overview de JavaScript
 
+
+
 // console
 console.log('Texto dentro de um log.')
 console.warn('Isso é um alerta.')
 console.error('Essa é uma mensagem de erro.')
 // console é um objeto e log(), warn() e error() são métodos ou funções
+
+
 
 // variáveis
 
@@ -16,6 +20,8 @@ if(true){
     console.log(x)
 }
 // é incorreto utilizar var depois do EC6
+
+
 
 // tipos de dados
 
@@ -65,7 +71,10 @@ const user = {
 console.log(user)
 console.log(typeof user)
 
+
+
 // métodos de string
+
 const text = 'qualquer um'
 // length para retornar o tamanho de uma string; obs.: length é um atributo, e não um método
 console.log(text.length)
@@ -80,6 +89,8 @@ console.log(text.indexOf('abc'))
 console.log(text.charAt(0))
 // slice() para encontrar um conjunto de caracteres num determinado intervalo do vetor da string
 console.log(text.slice(2,10))
+
+
 
 // mais sobre arrays
 // podem ser heterogêneos, ou seja, ter dados de tipos diferentes
@@ -107,6 +118,8 @@ function sum(){
     const n2 = formData.get('n2')
     console.log(n1+' '+n2)
 }
+
+
 
 // object literal
 // objetos literais são utilizados para representar endidades como pessoas, produtos, usuários...
@@ -140,6 +153,8 @@ const vector = [3,7,2,45,99]
 // desestruturando um vetor
 let [ v1, v2, ...otherVector] = vector
 console.log(otherVector)
+
+
 
 // JSON - JavaScript Object Notation
 // é uma notação, ou seja, uma forma de escrever com regras específicas, como o XML, por exemplo
@@ -190,6 +205,8 @@ const calc = {
 }
 console.log(JSON.stringify(calc))
 
+
+
 // estruturas
 
 // seleção
@@ -230,6 +247,8 @@ const outLiteral = `Quinze é ${(var1+var2)}
 e não ${(2*var1+var2)}.`
 console.log(outLiteral)
 
+
+
 // métodos de arrays
 // os métodos de arrays esperam funções anônimas como argumentos para responder aos parâmetros
 
@@ -267,6 +286,8 @@ const sumArray = numArray.reduce(function(num1, num2){
 })
 console.log(sumArray)
 
+
+
 // funções
 
 function myFunction(name, surname){
@@ -297,13 +318,14 @@ function out(){
 const testArrow = () => ((x=7), ()=>(x+5))  ()
 console.log(testArrow())
 
+// reduzindo o formato de escrita; quando tempos apenas uma propriedade de um objeto sendo utilizada na função anônima, podemos escrever o parâmetro como object literal especificando a propriedade do objeto que será trabalhada e utilizá-la sem que seja necessário escrever o nome do objeto
 const namesLength = names.map( ({length}) => length )
 console.log(namesLength)
 
 
-
 // closures
-
+// significa fechamento
+// trata-se de mais um escopo possível, considerando que uma função conheçe o escopo de onde foi declarada e pode usar as variáveis contidas nele, não sendo, nesse caso, nem escopo global, nem escopo local
 let varX = 50
 function out(){
     let varX = 35
@@ -318,16 +340,26 @@ console.log(out())
 // Desafio A+: Fazer esquema em que um código declara uma variável (let) e uma função faz a soma do valor da variável com um valor estático (5, por exemplo) como retorno. Outro código importa o primeiro e declara uma variável com o mesmo nome e outro valor. Em seguida, chama a função do primeiro código. Qual valor será exibido?
 // Utilizar o artigo disponível no endereço https://www.horadecodar.com.br/2020/08/13/como-incluir-um-arquivo-de-javascript-em-outro/
 
+
+
 // orientação a objetos
 
+// classes contém atributos e métodos
 class Product{
+    // em JavaScript, os atributos costumam ser especificados via contrutor
+    // o método constructor será chamado toda vez que um objeto de Product for criado (instanciado)
     constructor(name, price){
+        // a palavra reservada this indica que o dado que está sendo referenciado está fora do escopo atual, ou seja, this é um apontamento para quem está na classe Product, nesse caso
+        // mesmo que não tenha sido explicitamente definido no código, name e price são atributos (propriedades) da classe Product, pois estão sendo trabalhados dentro do método especial constructor
         this.name = name
         this.price = price            
     }
+    // método sem parâmetro e com retorno
+    // utilizar retorno é mais interessante, pois torna os métodos mais úteis para diferentes cenários (armazenar no banco, exibir na tela, atribuir para uma variável...)
     productDetails(){
         return `O nome do produto é ${this.name} e o preco é ${this.price}.`
     }
+    // métodos estáticos não precisam de objetos para serem invocados (chamados)
     static test(){
         console.log('testando método estático...')
     }
@@ -335,48 +367,65 @@ class Product{
 
 // herança
 
+// Tenis é subclasse (filha) e Product é superclasse (pai), ou seja, Tenis herda tudo que Product possui (atributos e métodos)
 class Tenis extends Product{
     constructor(name, price, size){
+        // a inicialização dos atributos que já existiam na superclasse é feita através da chamada do método especial super
         super(name, price) 
         this.size = size           
     }
     showNumber(){
         return `O tamanho do ${this.name} é ${this.size}.`
     }
+    // productDetails reescreve o método da superclasse para todo objeto da subclasse
     productDetails(){
         return `O nome do produto é ${this.name} e no tamanho ${this.size} o preço é ${this.price}.`
     }
 }
 
-// instanciando um objeto Product
+// instanciando (criando) um objeto Product
 const shirt = new Product('Camisa branca', 19.99)
+// chamando um método da classe Product a partir do objeto
 console.log(shirt.productDetails())
 const sock = new Product('Meia cinza', 12.49)
 console.log(sock.productDetails())
+// chamando um método estático sem a necessidade de especificar um objeto
 Product.test()
 const tenis = new Tenis('tenis Nike Jordan', 12000.00, '42')
 console.log(tenis.showNumber())
 tenis.name = 'tenis Jordan'
 
-// DOM - Document Object Model
 
+
+// DOM - Document Object Model
+// cria uma árvore que representa a estrutura do documento HTML, indicando qual elemento está dentro de qual outro elemento
+// através do objeto nativo document, é possível executar métodos que permitem obter e manipular o HTML
+
+// seleciona elemento pelo id; pouco recomendado fazer dessa forma
 console.log(document.getElementById('titulo'))
 
+// seleciona vários elementos pelo nome da classe e cria um array
 const texts = document.querySelectorAll('.text')
 console.log(texts)
 
 texts.forEach((data) => console.log(data))
 
+// manipula o conteúdo de um elemento
 texts[0].textContent = 'Estou alterando o primeiro parágrafo.'
 
+// insere conteúdo (string que pode descrever um HTML) em um elemento
 texts[0].innerHTML = '<span>Testando uma alteração...</span>'
 
+// altera propriedades do css inline do elemento
 texts[1].style.backgroundColor = 'red'
 
+// remove o elemento
 texts[2].remove()
 
+// adicionando evento
+// seleciona um elemento pelo id, armazenando em uma variável
 const button = document.querySelector('#btn')
-
+// rotina para a execução de alteração no estilo de um elemento a partir do clique
 button.addEventListener('click',()=>(texts[3].style.backgroundColor='orange'))
 
 // callbacks
