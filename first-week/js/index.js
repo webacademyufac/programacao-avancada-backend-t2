@@ -297,14 +297,21 @@ function out(){
 const testArrow = () => ((x=7), ()=>(x+5))  ()
 console.log(testArrow())
 
+const namesLength = names.map( ({length}) => length )
+console.log(namesLength)
+
+
+
 // closures
 
 let varX = 50
 function out(){
-   function sumXand5(){
-      return varX+5
-   }
-   return sumXand5
+    let varX = 35
+    function sumXand5(){
+        let varX = 10
+        return varX+5
+    }
+     return sumXand5()
 }
 console.log(out())
 
@@ -313,7 +320,64 @@ console.log(out())
 
 // orientação a objetos
 
+class Product{
+    constructor(name, price){
+        this.name = name
+        this.price = price            
+    }
+    productDetails(){
+        return `O nome do produto é ${this.name} e o preco é ${this.price}.`
+    }
+    static test(){
+        console.log('testando método estático...')
+    }
+}
+
+// herança
+
+class Tenis extends Product{
+    constructor(name, price, size){
+        super(name, price) 
+        this.size = size           
+    }
+    showNumber(){
+        return `O tamanho do ${this.name} é ${this.size}.`
+    }
+    productDetails(){
+        return `O nome do produto é ${this.name} e no tamanho ${this.size} o preço é ${this.price}.`
+    }
+}
+
+// instanciando um objeto Product
+const shirt = new Product('Camisa branca', 19.99)
+console.log(shirt.productDetails())
+const sock = new Product('Meia cinza', 12.49)
+console.log(sock.productDetails())
+Product.test()
+const tenis = new Tenis('tenis Nike Jordan', 12000.00, '42')
+console.log(tenis.showNumber())
+tenis.name = 'tenis Jordan'
+
 // DOM - Document Object Model
+
+console.log(document.getElementById('titulo'))
+
+const texts = document.querySelectorAll('.text')
+console.log(texts)
+
+texts.forEach((data) => console.log(data))
+
+texts[0].textContent = 'Estou alterando o primeiro parágrafo.'
+
+texts[0].innerHTML = '<span>Testando uma alteração...</span>'
+
+texts[1].style.backgroundColor = 'red'
+
+texts[2].remove()
+
+const button = document.querySelector('#btn')
+
+button.addEventListener('click',()=>(texts[3].style.backgroundColor='orange'))
 
 // callbacks
 
