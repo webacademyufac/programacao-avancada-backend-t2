@@ -131,3 +131,10 @@ p.then(
   ((success)=>(console.log(`${success.name} é ${success.message}.`))) ,
   ((error)=>(console.log(error))) 
 )
+
+
+
+
+fetch('http://exemplo.com/usuario')
+    .then(T => T.json())
+    .then(console.log)
