@@ -15,7 +15,11 @@ server.listen(port, hostname, () => {
 });
  */
 
+
+
 // callback
+
+
 
 /*
 const fs = require('fs')
@@ -32,7 +36,12 @@ console.log('Terceiro comando.')
 setTimeout(() => (console.log('testando o setTimeout')), 3000)
 console.log('comando que está após setTimeout')
  */
+
+
+
 // utilizando programação síncrona
+
+
 
 /* 
 function sum(){
@@ -54,7 +63,11 @@ sum()
 console.log('testando exibição...')
  */
 
+
+
 // transformando em callback (programação assíncrona)
+
+
 
 /* 
 function sum(callback, callbackError){
@@ -73,10 +86,15 @@ sum(
 console.log('testando exibição...')
  */
 
+
+
 // Promise - é uma classe; a tradução significa promessa
 // then()
 // resolve e reject
 
+
+
+/* 
 const promise = new Promise((resolve,reject)=> {
   const result = 1+2
   if(result === 2){
@@ -90,8 +108,13 @@ promise.then(
   ((resultado)=>(console.log(resultado))),
   ((erro)=>(console.log(erro)))
 )
+ */
+
+
 
 // voltando para calback
+
+
 
 /* 
 const name = 'Paulo Sampaio'
@@ -131,10 +154,3 @@ p.then(
   ((success)=>(console.log(`${success.name} é ${success.message}.`))) ,
   ((error)=>(console.log(error))) 
 )
-
-
-
-
-fetch('http://exemplo.com/usuario')
-    .then(T => T.json())
-    .then(console.log)
