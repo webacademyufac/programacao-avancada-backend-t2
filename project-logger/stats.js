@@ -18,6 +18,6 @@ setInterval( () => {
     console.log('++++++ MEMORY STATS +++++++')
     console.table(stats)
 
-    log('Rodando...')
+    log('Rodando...', JSON.stringify(stats))
         
 } , 1000)
