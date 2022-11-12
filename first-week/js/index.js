@@ -432,4 +432,4 @@ button.addEventListener('click',()=>(texts[3].style.backgroundColor='orange'))
 
 // promises
 
-// programação assíncrona
+// async - await

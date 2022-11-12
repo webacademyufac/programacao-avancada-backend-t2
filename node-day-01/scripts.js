@@ -137,6 +137,7 @@ whoIsTheBest(
 
 // transformando em Promise
 
+/* 
 const name = 'Paulo Sampaio'
 
 const p = new Promise((resolve, reject) => {
@@ -154,3 +155,19 @@ p.then(
   ((success)=>(console.log(`${success.name} é ${success.message}.`))) ,
   ((error)=>(console.log(error))) 
 )
+ */
+
+// Desafio 06
+
+fetch('http://jsonplaceholder.typicode.com/users') // Objeto do JavaScript (ES6) que funciona como uma Promise e trabalha requisições e respostas HTTP.
+    .then((resp) => resp.json()) // Recebendo os dados e convertendo para um JSON.
+    .then(function(dado){ // Recebendo os dados em um Array.
+        return dado.map(function(item){ // Conseguimos varrer o array com o método map.
+            const li = document.createElement('li') // Criando um elemento li.
+            li.innerHTML = `Nome: ${item.name} | Sobrenome: ${item.username}` // Inserindo o elemento no HTML.
+            document.getElementById('nomes').appendChild(li) // Inserindo um nó do tipo li na estrutura do DOM.
+        })
+    })
+    .catch((error) => {
+        console.log('Algo não deu certo: ' + error)
+    })
