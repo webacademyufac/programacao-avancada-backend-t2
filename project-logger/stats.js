@@ -18,6 +18,7 @@ setInterval( () => {
     console.log('++++++ MEMORY STATS +++++++')
     console.table(stats)
 
+    // COMENTAR O QUE O MÉTODO LOG FAZ
     log('Rodando...', JSON.stringify(stats))
         
 } , 1000)
