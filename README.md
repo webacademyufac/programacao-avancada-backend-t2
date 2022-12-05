@@ -318,4 +318,26 @@ Aplicação que simula os favoritos do computador.
 
 Localização: `./project-favorites`
 
-**Continuação no fork (https://github.com/biangomes/programacao-avancada-backend-t2)[]**
+
+### Aula 10
+
+**Data:** 05/12/202 (retorno)
+
+A instrução `let { valor } = input`, em project-favorites\public\scripts.js, devemos lembrar que `valor` se trata de um `Object`.
+
+Apagamos o `package.json` e o `node_modules`.
+
+Vamos até a pasta project-favorites e rodamos `npm init -y` dentro de project-favorites. Ainda dentro da pasta, vamos instalar o nodemon com suas dependências através do comando `npm i nodemon -D`.
+
+Uma vez que o `nodemon` está no `package.json` não precisamos mais, ao mudar a máquina de desenvolvimento, rodar o comando acima novamente. Basta executar o `npm i`.
+
+Ao digitar `npm start` ele irá executar o servidor. Isso ocorre porque no `package.json` tem o seguinte "atalho":
+
+```json
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+```
+
+Podemos substituir o `node server.js` por `nodemon server.js` e quando dermos o `npm start` ele vai monitorar todas as alterações e restartar o servidor automaticamente evitando o trabalho de parar e rodar de novo.
