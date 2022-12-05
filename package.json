@@ -1,10 +1,10 @@
 {
   "name": "programacao-avancada-backend-t2",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "./project-favorites/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./project-favorites/server.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,6 @@
   "homepage": "https://github.com/webacademyufac/programacao-avancada-backend-t2#readme",
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "description": ""
 }
