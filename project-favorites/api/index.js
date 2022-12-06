@@ -16,7 +16,10 @@ http.createServer((req, res) => {
         return res.end('show')
     }
     if(del) {
+        // TODO implementar metodo DELETE
         return res.end('delete')
     }
+
+    // TODO implementar o metodo CREATE
     return res.end('create')
 }).listen(3000, () => {console.log("API is running")});

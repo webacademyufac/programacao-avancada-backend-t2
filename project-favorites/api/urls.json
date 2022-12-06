@@ -1,8 +1,14 @@
 {
     "urls": [
         {
-            "name": "Web Academy",
-            "url": "http://ufac.br/webacademy"
+            "name": [
+                "Web Academy",
+                "Teste"
+            ],
+            "url": [
+                "http://ufac.br/webacademy",
+                "http://localhost:3000/"
+            ]
         }
     ]
 }
