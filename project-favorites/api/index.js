@@ -1,6 +1,8 @@
 const http = require('http');
 const data = require('./urls.json');
 const URL = require('url');
+const fs = require('fs');
+const path = require('path');
 
 http.createServer((req, res) => {
     /*
