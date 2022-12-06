@@ -11,7 +11,7 @@ http.createServer((req, res) => {
         DELETE: http://localhost:3000/?name=linkedin&url=https://www.linkedin.com/&del=1
     */
     const { name, url, del } = URL.parse(req.url, true).query
-    
+    console.log(typeof name)
     if(!name || !url) {
         return res.end('show')
     }
@@ -21,5 +21,9 @@ http.createServer((req, res) => {
     }
 
     // TODO implementar o metodo CREATE
+    // fs.writeFileSync(data, name.values)
+    // fs.writeFileSync(data, url.values)
+    var data = fs.readFileSync('urls.json');
+    console.log(data);
     return res.end('create')
 }).listen(3000, () => {console.log("API is running")});
