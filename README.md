@@ -341,3 +341,22 @@ Ao digitar `npm start` ele irá executar o servidor. Isso ocorre porque no `pack
 ```
 
 Podemos substituir o `node server.js` por `nodemon server.js` e quando dermos o `npm start` ele vai monitorar todas as alterações e restartar o servidor automaticamente evitando o trabalho de parar e rodar de novo.
+
+---
+
+**Vídeo O que é API?**
+
+Cliente (pag web, celular)
+Garçom (API)
+Cozinha (Server)
+
+API é um conjunto de rotinas e padrões estabelecidos por uma aplicação, para que outras aplicações possam utiizar as funcionalidades desta aplicação.
+
+- Responsáel por estabelecer comunicação entre diferentes aplicações;
+
+O que não é API, é monolito (?): Django por exemplo.
+
+---
+
+*Seguindo o 20221205-roteiro.pdf*
+
