@@ -1,7 +1,7 @@
 const ul = document.querySelector('ul')
 const input = document.querySelector('input')
 const form = document.querySelector('form')
-
+/* 
 // Função que carrega o conteúdo da API.
 /*
     * Client
