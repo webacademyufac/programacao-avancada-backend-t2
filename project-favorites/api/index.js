@@ -9,14 +9,13 @@ const data = require('./urls.json')
 
 // Servidor rodando na porta 3000.
 http.createServer((req, res) => {
-
-    // Desestruturação da query string da URL para obter os valores que estão associados às chaves name, url e del.
+    /* Desestruturação da query string da URL para obter os valores que estão associados às chaves name, url e del. */
     const { name, url, del } = URL.parse(req.url, true).query
 
     res.writeHead(200, {
         'Access-Control-Allow-Origin': '*'
     })
-    
+
     function writeFile(cb) {
         fs.writeFile(
             path.join(__dirname, 'urls.json'),
@@ -37,9 +36,9 @@ http.createServer((req, res) => {
         data.urls = data.urls.filter(item => item.url != url)
         return writeFile(message => res.end(message))
     }
-    
+
     // Create - inserir no JSON.
-    data.urls.push({name, url})
+    data.urls.push({ name, url })
     return writeFile(message => res.end(message))
 
 }).listen(3000, () => console.log('Api is running.'))

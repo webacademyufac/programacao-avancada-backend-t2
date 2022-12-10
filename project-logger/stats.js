@@ -1,13 +1,13 @@
 const os = require('os')
 const log = require('./logger.js')
 
-setInterval( () => { 
+setInterval(() => {
     const { freemem, totalmem } = os
 
-    const total = parseInt(totalmem()/1024/1024)
-    const freeMem = parseInt(freemem()/1024/1024)
+    const total = parseInt(totalmem() / 1024 / 1024)
+    const freeMem = parseInt(freemem() / 1024 / 1024)
     const usage = total - freeMem
-    const percents = parseInt((usage/total) * 100)
+    const percents = parseInt((usage / total) * 100)
 
     const stats = {
         total: `${total} MB`,
@@ -20,5 +20,5 @@ setInterval( () => {
 
     // COMENTAR O QUE O MÉTODO LOG FAZ
     log('Rodando...', JSON.stringify(stats))
-        
-} , 1000)
+
+}, 1000)
