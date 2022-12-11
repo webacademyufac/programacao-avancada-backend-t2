@@ -1,0 +1,6 @@
+Studio 3T for mongoDB
+
+db.teacher.find()//procura todos
+db.teacher.find({name:"victor"})//procura por nome
+db.teacher.find().sort( { name: 1 } )//ordem crecente
+db.teacher.find().sort( { name: -1 } ).limit(2)//ordem decrescente mas limit() pega só os ultimos 2
