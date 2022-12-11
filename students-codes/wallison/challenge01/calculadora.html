@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <form action="#" name="form">
+        <label for="">Entre com um primeiro número</label>
+        <input type="number" name="firstNumber">
+        <select name="operation">
+            <option value="sum">Soma</option>
+            <option value="sub">Subtração</option>
+            <option value="mult">multiplicação</option>
+            <option value="div">divisão</option>
+        </select>
+        <label for="">Entre com um segundo número</label>
+        <input type="number" name="secondNumber">
+        <button onclick="calcular()">Calcular</button>
+    </form>
+
+    <script>
+        function calcular() {
+            const formData = new FormData(document.querySelector('form'))
+            const firstNumber = parseInt(formData.get("firstNumber"))
+            const secondNumber = parseInt(formData.get("secondNumber"))
+            const operation = formData.get("operation")
+
+            switch(operation) {
+                case 'sum':
+                    console.log(firstNumber + secondNumber)
+                    break;
+                case 'div':
+                    console.log(firstNumber / secondNumber)
+                    break;
+                case 'mult':
+                    console.log(firstNumber * secondNumber)
+                    break;
+                case 'sub':
+                    console.log(firstNumber - secondNumber)
+                    break;
+                default:
+                    console.log(firstNumber + secondNumber)
+            }
+
+            const operationResults = {
+                sum: firstNumber + secondNumber,
+                div: firstNumber / secondNumber,
+                mult: firstNumber * secondNumber,
+                sub: firstNumber - secondNumber
+            }
+
+            console.log(operationResults)
+
+            operationResultsJson = JSON.stringify(operationResults)
+
+            console.log(operationResultsJson)
+        }
+    </script>
+</body>
+</html>

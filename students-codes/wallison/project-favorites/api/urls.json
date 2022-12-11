@@ -1,0 +1,20 @@
+{
+  "urls": [
+    {
+      "name": "Web Academy",
+      "url": "http://ufac.br/webacademy"
+    },
+    {
+      "name": "ufac",
+      "url": "http://ufac.br"
+    },
+    {
+      "name": "wallison",
+      "url": "http://wallison.com"
+    },
+    {
+      "name": "uderlanio",
+      "url": "https://uderlanio.com"
+    }
+  ]
+}
