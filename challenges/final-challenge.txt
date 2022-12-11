@@ -1,4 +1,5 @@
 Desafio final: quando adicionamos ou deletamos na interface da nossa aplicação, vemos as coisas acontecerem, mas depois que a página carrega perdemos as alterações por não estar acontecendo sincronismo com a API. O objetivo é fazer isso acontecer, ou seja, quando adicionar no frontend, adicionar no documento JSON e, da mesma forma, quando apagar no frontend, apagar no documento JSON. Em seguida, implementar a utilização do MongoDB, em substituição ao documento JSON.
 Links para referência:
+https://youtu.be/K5QaTfE5ylk
 https://youtu.be/GAZdUyIV3ms
 https://www.luiztools.com.br/post/tutorial-crud-em-node-js-com-driver-nativo-do-mongodb/
