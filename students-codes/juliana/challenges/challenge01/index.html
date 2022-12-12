@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- //boa prática é fazer todas as configurações no head -->
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <label for="num1">N1</label>
+    <input type="text" id="num1" name="num1"><br><br>
+    <label for="num2">N2</label>
+    <input type="text" id="num2" name="num2"><br><br>
+    <label for="operation">operation</label>
+
+<select id="operation">
+  <option value="+">+</option>
+  <option value="-">-</option>
+  <option value="/">/</option>
+  <option value="*">*</option>
+</select>
+<button type="button" onclick="funCalculate()">Calculate</button>
+<br><br>
+<label>Result</label>
+<label id="result"></label>
+
+    
+
+</body>
+</html>

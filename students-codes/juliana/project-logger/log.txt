@@ -1,0 +1,16 @@
+11 20 22 33 {"total":"16128 MB","freeMem":"9747 MB","percents":"39% em uso"}
+11 20 22 34 {"total":"16128 MB","freeMem":"9752 MB","percents":"39% em uso"}
+11 20 22 35 {"total":"16128 MB","freeMem":"9736 MB","percents":"39% em uso"}
+11 20 22 36 {"total":"16128 MB","freeMem":"9730 MB","percents":"39% em uso"}
+11 20 22 37 {"total":"16128 MB","freeMem":"9729 MB","percents":"39% em uso"}
+11 20 22 38 {"total":"16128 MB","freeMem":"9728 MB","percents":"39% em uso"}
+11 20 22 39 {"total":"16128 MB","freeMem":"9743 MB","percents":"39% em uso"}
+11 20 22 40 {"total":"16128 MB","freeMem":"9734 MB","percents":"39% em uso"}
+11 20 22 41 {"total":"16128 MB","freeMem":"9764 MB","percents":"39% em uso"}
+11 20 22 42 {"total":"16128 MB","freeMem":"9768 MB","percents":"39% em uso"}
+11 20 22 43 {"total":"16128 MB","freeMem":"9776 MB","percents":"39% em uso"}
+11 20 22 44 {"total":"16128 MB","freeMem":"9777 MB","percents":"39% em uso"}
+11 20 22 45 {"total":"16128 MB","freeMem":"9760 MB","percents":"39% em uso"}
+11 20 22 46 {"total":"16128 MB","freeMem":"9771 MB","percents":"39% em uso"}
+11 20 22 47 {"total":"16128 MB","freeMem":"9779 MB","percents":"39% em uso"}
+11 20 22 48 {"total":"16128 MB","freeMem":"9764 MB","percents":"39% em uso"}
