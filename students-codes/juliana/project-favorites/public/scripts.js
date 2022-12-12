@@ -33,9 +33,15 @@ function addElement({ name, url }) {
     
 } 
 
-function removeElement(el) {
-    if (confirm('Tem certeza que deseja deletar?'))
+async function removeElement(el) {
+    if (confirm('Tem certeza que deseja deletar?')){
+        let url = el.parentNode.children[0].href;
+        url = url.substring(0, url.length-1);
+        const chave='http://localhost:3000/?name='+el.parentNode.children[0].innerText+'&url='+url+'&del=1';
         el.parentNode.remove()
+        await fetch(chave)  
+        
+    }
 }
 
 form.addEventListener('submit', (event) => {
