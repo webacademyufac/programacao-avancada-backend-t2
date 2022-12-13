@@ -15,7 +15,7 @@ function addElementFile({ name, url }) {
     fetch(url)
 }
 function removeElementFile({ name, url }) {
-    var url = "http://localhost:3000?" + "name=" + name + "&url=" + url + "del=true"
+    var url = "http://localhost:3000?" + "name=" + name + "&url=" + url + "&del=true"
     fetch(url)
 }
 /*
