@@ -1,0 +1,3 @@
+https://github.com/johnbom1/back-end-avancado.git
+
+OBS: Os arquivos não estão todos organizados, porém, os commits estão registrados e podem ser lidos para a compreensão do que foi feito e alterado durante a disciplina.
