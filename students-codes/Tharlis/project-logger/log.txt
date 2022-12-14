@@ -1,0 +1,58 @@
+{"total":"16128 MB","freeMem":"9169 MB","porcent":"43% em uso","data":"1:18:17"}
+{"total":"16128 MB","freeMem":"9172 MB","porcent":"43% em uso","data":"1:18:17"}
+{"total":"16128 MB","freeMem":"9168 MB","porcent":"43% em uso","data":"1:18:17"}
+{"total":"16128 MB","freeMem":"9169 MB","porcent":"43% em uso","data":"1:18:17"}
+{"total":"16128 MB","freeMem":"9179 MB","porcent":"43% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9176 MB","porcent":"43% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9167 MB","porcent":"43% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9171 MB","porcent":"43% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9185 MB","porcent":"43% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9187 MB","porcent":"43% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9196 MB","porcent":"42% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9183 MB","porcent":"43% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9189 MB","porcent":"43% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9189 MB","porcent":"43% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9199 MB","porcent":"42% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9197 MB","porcent":"42% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9194 MB","porcent":"42% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9195 MB","porcent":"42% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9182 MB","porcent":"43% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9184 MB","porcent":"43% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9178 MB","porcent":"43% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9178 MB","porcent":"43% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9192 MB","porcent":"43% em uso","data":"1:18:18"}
+{"total":"16128 MB","freeMem":"9132 MB","porcent":"43% em uso","data":"1:18:18:function getSeconds() { [native code] }"}
+{"total":"16128 MB","freeMem":"9120 MB","porcent":"43% em uso","data":"1:18:18:function getSeconds() { [native code] }"}
+{"total":"16128 MB","freeMem":"9128 MB","porcent":"43% em uso","data":"1:18:18:function getSeconds() { [native code] }"}
+{"total":"16128 MB","freeMem":"9144 MB","porcent":"43% em uso","data":"1:18:18:function getSeconds() { [native code] }"}
+{"total":"16128 MB","freeMem":"9144 MB","porcent":"43% em uso","data":"1:18:18:function getSeconds() { [native code] }"}
+{"total":"16128 MB","freeMem":"9145 MB","porcent":"43% em uso","data":"1:18:18:function getSeconds() { [native code] }"}
+{"total":"16128 MB","freeMem":"9145 MB","porcent":"43% em uso","data":"1:18:18:function getSeconds() { [native code] }"}
+{"total":"16128 MB","freeMem":"9143 MB","porcent":"43% em uso","data":"1:18:18:function getSeconds() { [native code] }"}
+{"total":"16128 MB","freeMem":"9084 MB","porcent":"43% em uso","data":"1:18:19:21"}
+{"total":"16128 MB","freeMem":"9101 MB","porcent":"43% em uso","data":"1:18:19:22"}
+{"total":"16128 MB","freeMem":"9080 MB","porcent":"43% em uso","data":"1:18:19:23"}
+{"total":"16128 MB","freeMem":"9086 MB","porcent":"43% em uso","data":"1:18:19:24"}
+{"total":"16128 MB","freeMem":"9077 MB","porcent":"43% em uso","data":"1:18:19:25"}
+{"total":"16128 MB","freeMem":"9088 MB","porcent":"43% em uso","data":"1:18:19:26"}
+{"total":"16128 MB","freeMem":"9087 MB","porcent":"43% em uso","data":"1:18:19:27"}
+{"total":"16128 MB","freeMem":"9106 MB","porcent":"43% em uso","data":"1:18:19:28"}
+{"total":"16128 MB","freeMem":"9082 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:12"}
+{"total":"16128 MB","freeMem":"9082 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:13"}
+{"total":"16128 MB","freeMem":"9083 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:14"}
+{"total":"16128 MB","freeMem":"9081 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:15"}
+{"total":"16128 MB","freeMem":"9081 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:16"}
+{"total":"16128 MB","freeMem":"9091 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:17"}
+{"total":"16128 MB","freeMem":"9085 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:18"}
+{"total":"16128 MB","freeMem":"9084 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:19"}
+{"total":"16128 MB","freeMem":"9113 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:20"}
+{"total":"16128 MB","freeMem":"9114 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:21"}
+{"total":"16128 MB","freeMem":"9115 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:22"}
+{"total":"16128 MB","freeMem":"9111 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:23"}
+{"total":"16128 MB","freeMem":"9121 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:24"}
+{"total":"16128 MB","freeMem":"9113 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:25"}
+{"total":"16128 MB","freeMem":"9114 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:26"}
+{"total":"16128 MB","freeMem":"9114 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:27"}
+{"total":"16128 MB","freeMem":"9116 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:28"}
+{"total":"16128 MB","freeMem":"9115 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:29"}
+{"total":"16128 MB","freeMem":"9100 MB","porcent":"43% em uso","data":"dia: 1 do 10 ano 2022","hora":"18:22:30"}
