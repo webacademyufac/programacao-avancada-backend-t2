@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+header.cabecalho{
+    background-color: #282634;
+    height: 100px;
+}
+body{
+    background-color:#cecccc
+}
+.container{
+    text-align: center;
+    padding:120px 0px ;
+    width: 100%;
+
+}
+.container h1{
+    font-size: 40px;
+    color: black;
+    font-weight: normal;
+}
+.container input{
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0, 10); */
+    border-radius: 15px;
+    font-weight: bold;
+    color: black;
+   
+    
+
+}
+.dev{
+    padding-top: 15px;
+}
+.dev a {
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: none;
+    top: 10px;
+    padding: 0 10px;
+    font-weight: normal;
+    display: inline;
+}
+
+
+div.aviso p {
+    color: red;
+}
+footer.footer{
+    background-color: #282634;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+}
+
+ul {
+  background: whitesmoke;
+  box-shadow: 0px 4px 8px -2px #00000033;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 20px;
+  margin: 10px 200px;
+}
+
+li {
+  padding: 10px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+
+
+a {
+  display: block;
+  
+  color: #333;
+  text-decoration: none;  
+  
+  padding: 16px 0;
+  font-size: 1.8rem;
+  
+}
+
+a:hover {
+    text-decoration:underline;
+    color: rgb(78, 78, 78)
+}
