@@ -1,0 +1,76 @@
+Desafio 1:
+const formData = new FormData(document.querySelector('form'))
+const num1 = formData.get("n1")
+console.log(n1)
+
+const formData2 = new FormData(document.querySelector('form'))
+const num2 = formData.get("n2")
+console.log(n1)
+
+const valueNum1 = Number(num1);
+const valueNum2 = Number(num2);
+
+const sum = valueNum1 + valueNum2
+const sub = valueNum1 - valueNum2
+const mul = valueNum1 * valueNum2
+const div = valueNum1 / valueNum2
+
+Desafio 2:
+const vet = [1, 2, 3, 4, 5]
+const vet2 = {
+    n1: vet[0],
+    n2: vet[1],
+    n3: vet[2],
+    n4: vet[3],
+    n5: vet[4]
+}
+
+const { n1, n2, n3, n4, n5} = vet2;
+console.log(JSON.stringify({n1, n2, n3, n4, n5}))
+
+Desafio 3:
+const num1 = 3
+const num2 = 90
+const calculadora = {
+    sum: num1 + num2,
+    sub: num1 - num2,
+    mul: num1 * num2,
+    div: num1 / num2
+}
+
+console.log(calculadora)
+
+
+Desafio 4:
+const aux = (x) => () => (x+11);
+console.log(resultado(4)());
+
+
+Desafio 5:
+function functionDate() {
+    const dt = new Date();
+
+    const h = dt.getHours();
+    const m = dt.getMinutes();
+    const s = dt.getSeconds();
+
+    console.log(`Hora: ${h}:${m}:${s}`);
+}
+
+setTimeout(functionDate, 5000);
+setTimeout(functionDate, 5000);
+setInterval(functionDate, 5000);
+
+Desafio 6:
+fetch('http://jsonplaceholder.typicode.com/users')
+    .then(T => T.json())
+    .then((dado) => (dado.forEach(item => {
+  
+        const ul = document.querySelector('.text')
+
+        const li = document.createElement('li')
+        li.textContent = `Nome: ${item.name} E-mail: ${item.email}`
+        ul.appendChild(li)
+        
+
+    })));
