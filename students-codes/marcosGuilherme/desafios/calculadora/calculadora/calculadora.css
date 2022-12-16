@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: rgb(0,50,51);
+    background: linear-gradient(90deg, rgba(0,50,51,1) 0%, rgba(9,121,103,1) 50%, rgba(1,143,172,1) 100%);
+}
+
+/* Tamanho da calculadora  */
+.calculator{
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* Configurações gerais dos buttons */
+.calculator .button-row {
+    width: 8em;
+    height: 5em;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 8px;
+}
+
+.calculator .button-row:hover{
+    cursor: pointer;
+    background-color: rgb(40, 40, 52);
+    color: #f5f5f5;
+}
+
+/* Buttons dos Operadores, configurações e hover */
+.calculator .button-row:last-child{
+    background-color: rgb(255, 149, 0)
+}
+
+.calculator .button-row:last-child:hover{
+    cursor: pointer;
+    background-color: rgb(255, 89, 0);
+    color: #f5f5f5;
+}
+
+/* Tamanho da fonte, cor da fonte*/
+.calculator .button-row p,
+.calculator .result p{
+    font-size: 2em;
+}
+
+.calculator .result p{
+    color: #f5f5f5;
+}
+
+
+/* Configurações do result */
+.calculator .result{
+    border: 1px solid #f5f5f5;
+    width: 440px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: none;
+}
+
+/* Button de igualdade */
+.calculator .equals {
+    background-color: rgb(71, 215, 71);
+}
+
+.calculator .equals:hover{
+    background-color: rgb(40, 173, 40);
+}
+
+/* Button de delete */
+.calculator .delete {
+    background-color: rgb(255, 64, 64);
+}
+
+.calculator .delete:hover{
+    background-color: rgb(255, 27, 27);
+}
