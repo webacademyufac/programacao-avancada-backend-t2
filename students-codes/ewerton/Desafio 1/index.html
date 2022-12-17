@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - EWERTON RUIZ DE ALMADA</title>
+</head>
+<body>
+   <h1>Minha Calculadora - EWERTON_OPERATION - 2022</h1> 
+
+   <h2>Primeiro Número</h2>
+   <input id ="n1" type="number" /><br />
+
+   <h2>Segundo Número</h2>
+   <input id="n2" type="number" /><br /><br />
+
+    <button onclick="somar()">Somar</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+
+       <br /><br />
+    <!-- O resultado é <span></span> -->
+   
+   <script>
+    let n1 = document.querySelector('#n1')
+    let n2 = document.querySelector('#n2')
+    // let resultado = document.querySelector('span')
+
+//FUNÇÕES DAS QUATRO OPERAÇÕES MATEMÁTICAS
+//FUNÇÃO SOMAR
+   function somar(){
+    const p = document.createElement('p') 
+    p.innerHTML = 'O resultado da soma foi ' + (parseFloat(n1.value) + parseFloat(n2.value)) + '\n'
+    document.body.appendChild(p)
+             
+   }
+//FUNÇÃO SUBTRAIR
+    function subtrair() {
+        const p = document.createElement('p')
+        p.innerHTML = 'O resultado da subtração foi ' + (parseFloat(n1.value) - parseFloat(n2.value)) + '\n'
+        document.body.appendChild(p)
+        
+    }
+//FUNÇÃO MULTIPLICAR
+    function multiplicar() {
+        const p = document.createElement('p')
+        p.innerHTML = 'O resultado da multiplicação foi ' + (parseFloat(n1.value) * parseFloat(n2.value)) + '\n'
+        document.body.appendChild(p)
+    }
+//FUNÇÃO DIVIDIR
+    function dividir() {
+        const p = document.createElement('p')
+        let resultado = (parseFloat(n1.value) / parseFloat(n2.value))
+        if (resultado == Infinity){
+            p.innerHTML = 'O resultado da divisão é 0 \n' 
+        }else{
+            p.innerHTML = 'O resultado da divisão foi ' + resultado + '\n'
+        }
+        document.body.appendChild(p)
+    }   
+   </script>
+
+</body>
+</html>
