@@ -1,0 +1,23 @@
+Para auxiliar na resolução do Desafio 01: https://www.horadecodar.com.br/2022/01/31/como-pegar-dados-de-formulario-com-javascript/
+
+Para auxiliar na resolução do Desafio 04: https://www.horadecodar.com.br/2020/08/13/como-incluir-um-arquivo-de-javascript-em-outro/
+
+Tweets
+
+THREAD DE ATALHOS DO VSCODE
+https://twitter.com/MyNickIsNick_/status/1589021197810819072
+
+5 GitHub repositories will make you feel like an expert developer
+https://twitter.com/Prathkum/status/1583817955061956610
+
+10 Famous GitHub Repositories That Will Make You a Better Developer
+https://twitter.com/reactive_dude/status/1573711110989139968
+
+20 ferramentas para aprender inglês (e outros idiomas) de graça
+https://twitter.com/dii_lua/status/1561868913050361856
+
+Best GitHub Repositories for Developers
+https://twitter.com/jsmasterypro/status/1561246730443685889
+
+25 jogos para aprender programação
+https://twitter.com/EngineerRabbit/status/1560375230404632578
