@@ -1,0 +1,32 @@
+{
+  "urls": [
+    {
+      "name": "Web Academy",
+      "url": "http://ufac.br/webacademy"
+    },
+    {
+      "name": "youtube",
+      "url": "http://youtube.com.br"
+    },
+    {
+      "name": "asa",
+      "url": "http://ex.com.br"
+    },
+    {
+      "name": "canva",
+      "url": "http://canva.com.br"
+    },
+    {
+      "name": "google",
+      "url": "http://google.com"
+    },
+    {
+      "name": "exemplo",
+      "url": "http://google.com"
+    },
+    {
+      "name": "amazon",
+      "url": "http://amazon.com.br"
+    }
+  ]
+}

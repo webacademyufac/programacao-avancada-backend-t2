@@ -1,0 +1,31 @@
+AULA 02 VICTOR - BACKEND-AVANÇADO
+Primeiramente fizemos a criação da
+ api e as rotas
+
+
+segunda parte - AULA 02:
+
+A PRINCIPIO mudamos o show para de fato 
+uma funçao que retorna o conteudo JSON 
+de dentro de data.
+
+Mudamos ainda o delete que a ideia é 
+percorrer com o método filter o objeto JSON
+e ele devolve um valor escolhido
+
+Explicacao professor:
+
+Usamos http para subir o servidor = ok
+pegamos o url pelo metodo url e usamos atraves das query strings(pesquisar)
+
+dividimos em tres parametros, name, url, del
+exemplo de create:
+
+http://localhost:3500/?name=exemplo3&url=http://canva.com
+exemplo de del:
+http://localhost:3500/?name=exemplo2&url=http://google.com&del=1
+
+
+linha de deletar
+Pegamos tudo qie esrar dentro de data.
+O filter ira copiar para o novo item de um por um. so onde a url for diferente
