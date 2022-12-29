@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  
+  background: #7159c1;
+}
+
+.container {
+  width: 80%;
+  max-width: 400px;
+  
+  margin: auto;
+}
+
+h1 {
+  text-align:center;
+  color: white;
+  
+  font-size: 3.4rem;
+}
+
+input {
+  width: 100%;
+  
+  padding: 8px 16px;
+  margin-bottom: 32px;
+  
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  
+  outline: none;
+  
+  font-size: 1.6rem;
+  font-weight:300;
+}
+
+ul {
+  background: white;
+  
+  box-shadow: 0px 4px 8px -2px #00000033;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  
+  padding: 16px;
+  
+  font-size: 1.4rem;
+  
+}
+
+li {
+  list-style: none;
+  
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  border-bottom: 1px solid #ddd;
+}
+
+
+a {
+  display: block;
+  
+  color: #333;
+  text-decoration: none;  
+  
+  padding: 16px 0;
+  font-size: 1.8rem;
+  
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+li:first-child,
+li:last-child {
+  border: none;
+}
+
+li span{
+  cursor:pointer;
+}
+
+header, section, footer{
+  display: flex;
+  flex-direction: column;
+}
+
+#logo > img{
+  width: 7em;
+  display:block;
+  margin: 1em auto;
+}
+
+#navbar > nav{
+  text-align: center;
+  margin-bottom: 2em;
+  display:flex;
+  justify-content: space-around;
+}
+
+#text-info{
+  font-size: medium;
+  text-align: center;
+  margin-bottom: 2em;
+  color: white;
+}
+#play-info{
+  display: none;
+}
+
+footer{
+  background-color: black;
+  border-radius: 2em;
+  text-align: center;  
+}
+
+footer > p{
+  font-size: small;
+  color: white;
+
+}
+/* Início da Estilização do código HTML front_end */
+@media screen and (min-width:480px) {
+  #logo{
+    width: 10em;
+  }
+  header{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  #navbar > nav > a {
+    margin: 0 3em;
+
+  }
+  #logo > img {
+    display: block;
+    width: 5em;
+    border-radius: 1em;
+    
+  }
+  section{
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5em 0;
+
+  }
+  
+  #text-info{
+    width: 30%;
+
+  } 
+
+    #play-info {
+     display: flex;
+     flex-direction: column;
+     
+    }
+  
+    #play-info > iframe{
+    height: 30em;
+    width: 80%;
+    }
+   
+}
+@media screen and (min-width:768px) {
+  #text-info{
+    width: 20%;
+    
+  } 
+  #play-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 0;
+
+  }
+  #play-info > iframe {
+    width: 30%;
+   
+  } 
+  
+}
